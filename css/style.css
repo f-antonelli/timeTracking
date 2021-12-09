@@ -37,7 +37,9 @@
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      padding: 3px 20px 0 20px; }
+      justify-content: center;
+      padding: 3px 20px 0 20px;
+      height: 30%; }
       .container-grid .grid-item .box-buttons button {
         border: none;
         outline: none;
@@ -81,7 +83,7 @@
       height: 80%;
       width: 100%;
       border-radius: 10px;
-      padding: 20px; }
+      padding: 20px 20px 0 20px; }
       .container-grid .grid-item .box-data .title {
         display: flex;
         justify-content: space-between;
@@ -101,7 +103,7 @@
         font-size: 14px;
         font-weight: 300;
         color: #bdc1ff; }
-      .container-grid .grid-item .box-data .box-info:hover {
+      .container-grid .grid-item .box-data:hover {
         background: #6f76c8; }
 
 @media (max-width: 840px) {
