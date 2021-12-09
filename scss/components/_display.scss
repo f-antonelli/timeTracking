@@ -1,0 +1,130 @@
+.container-grid{
+   display: grid;
+   grid-template-rows: repeat(2, 1fr);
+   grid-template-columns: repeat(4, 1fr);
+   column-gap: 20px;
+   row-gap: 20px;
+   height: 45vh;
+   margin: 10px;
+   :first-child{
+      grid-row: span 2;
+   }
+   .grid-item{
+      position: relative;
+      background-color: $dark-blue;
+      border-radius: 10px;
+      max-width: 220px;
+      .box-user{
+         display: flex;
+         flex-direction: column;
+         height: 70%;
+         background-color: $blue;
+         border-radius: 10px;
+         padding: 20px;
+         img{
+            border: 2px solid white;
+            border-radius: 50%;
+            width: 60px;
+            height: auto;
+            margin-bottom: 20px;
+         }
+         p{
+            font-size: 14px;
+            font-weight: 300;
+            color: $pale-blue;
+         }
+         h1{
+            font-weight: 300;
+         }
+      }
+      .box-buttons{
+         display: flex;
+         flex-direction: column;
+         align-items: flex-start;
+         padding: 3px 20px 0 20px;
+         button{
+            border: none;
+            outline: none;
+            background: none;
+            color: $desaturated-blue;
+            margin: 8px 0;
+            cursor: pointer;
+            &:focus, &:hover{
+               color: #fff;
+            }
+         }
+      }
+      .box-banner{
+         position: absolute;
+         top: 0;
+         left: 0;
+         height: 90%;
+         width: 100%;
+         overflow: hidden;
+         background: $light-red;
+         border-radius: 10px;
+         img{
+            position: absolute;
+            right: 10px;
+            top: -9px;
+            width: 70px;
+         }
+      }
+      .box-banner.play-bg{
+         background: $soft-blue;
+      }
+      .box-banner.study-bg{
+         background: $light-red-study;
+      }
+      .box-banner.exercise-bg{
+         background: $lima-green;
+      }
+      .box-banner.social-bg{
+         background: $violet;
+      }
+      .box-banner.selfcare-bg{
+         background: $soft-orange;
+      }
+      .box-data{
+         cursor: pointer;
+         position: absolute;
+         bottom: 0;
+         left: 0;
+         background: $dark-blue;
+         z-index: 10;
+         height: 80%;
+         width: 100%;
+         border-radius: 10px;
+         padding: 20px;
+         .title{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 18px;
+            font-weight: 500;
+            img{
+               width: 21px;
+               height: 5px;
+               cursor: pointer;
+               &:hover{
+                  filter: brightness(0) invert(1);
+               }
+            }
+         }
+         .box-info{
+            h2{
+               font-size: 45px;
+               font-weight: 300;
+            }
+            span{
+               font-size: 14px;
+               font-weight: 300;
+               color: $pale-blue;
+            }
+            &:hover{
+               background: $desaturated-blue;
+            }
+         }
+      }
+   }
+}

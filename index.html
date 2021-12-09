@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+</head>
+<body>
+  <div class="container-grid" id="containerGrid">
+    <div class="grid-item">
+      <div class="box-user">
+        <img src="./images/image-jeremy.png" alt="jeremy">
+        <div class="box-name">
+            <p>Report for</p>
+            <h1>Jeremy Robson</h1>
+        </div>
+      </div>
+      <div class="box-buttons">
+        <button id="btnDaily">Daily</button>
+        <button id="btnWeekly">Weekly</button>
+        <button id="btnMonthly">Monthly</button>
+      </div>
+    </div>
+    <div class="grid-item">
+      <div class="box-banner">
+        <img src="./images/icon-work.svg" alt="work">
+      </div>
+      
+    </div>
+    <div class="grid-item">
+      <div class="box-banner play-bg">
+        <img src="./images/icon-play.svg" alt="play">
+      </div>
+
+    </div>
+    <div class="grid-item">
+      <div class="box-banner study-bg">
+        <img src="./images/icon-study.svg" alt="study">
+      </div>
+
+    </div>
+    <div class="grid-item">
+      <div class="box-banner exercise-bg">
+        <img src="./images/icon-exercise.svg" alt="exercise">
+      </div>
+
+    </div>
+    <div class="grid-item">
+      <div class="box-banner social-bg">
+        <img src="./images/icon-social.svg" alt="social">
+      </div>
+
+    </div>
+    <div class="grid-item">
+      <div class="box-banner selfcare-bg">
+        <img src="./images/icon-self-care.svg" alt="selfcare">
+      </div>
+
+    </div>
+  </div>
+
+  <!--Template Data-->
+  <template id="templateData">
+    <div class="box-data">
+      <div class="title">
+        <p></p>
+        <img src="./images/icon-ellipsis.svg" alt="elipsis">
+      </div>
+      <div class="box-info">
+        <h2></h2>
+        <span></span>
+      </div>
+    </div>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>
